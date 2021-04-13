@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import Counter from "./Counter";
-import Info from "./Info";
-import Reducer from "./Reducer";
+import React, { useState } from 'react';
+import Average from './Average';
+import Counter from './Counter';
+import Info from './Info';
+import Reducer from './Reducer';
 
 const App = () => {
   const [visible, setVisible] = useState(false);
@@ -12,13 +13,15 @@ const App = () => {
           setVisible(!visible);
         }}
       >
-        {visible ? "숨기기" : "보이기"}
+        {visible ? '숨기기' : '보이기'}
       </button>
       <hr />
       <Counter />
       {visible && <Info />}
       <hr />
       <Reducer />
+      <hr />
+      <Average />
     </div>
   );
 };
