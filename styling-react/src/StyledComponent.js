@@ -4,11 +4,34 @@ import styled, { css } from 'styled-components';
 // styled-component와 css/sass 비교 했을 때, styled-component는 props 값으로
 // 전달해 주는 값을 쉽게 스타일 적용 가능
 
+const size = {
+  desktop: 1024,
+  tablet: 768,
+};
+
+const media = Object.keys(size).reduce((acc, label) => {
+  acc[label] = (...args) => css`
+    @media (max-width: ${size[label] / 16}em) {
+      ${css(...args)};
+    }
+  `;
+  return acc;
+}, {});
 const Box = styled.div`
   /*props 로 넣어준 값을 직접 전달해 줄 수 있다*/
   background: ${(props) => props.color || 'blue'};
   padding: 1rem;
   display: flex;
+  width: 1024px;
+  margin: 0 auto;
+  ${media.desktop`width: 768px;`}
+  ${media.tablet`width: 100%;`};
+  /* @media (max-width: 1024px) {
+    width: 768px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  } */
 `;
 const Button = styled.button`
   background: white;
