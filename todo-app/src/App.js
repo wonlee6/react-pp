@@ -34,22 +34,20 @@ const App = () => {
         text,
         checked: false,
       };
-      setTodos(todos.concat(todo));
+      setTodos((todos) => todos.concat(todo));
       nextId.current += 1;
     },
     [todos],
   );
 
-  const onRemove = useCallback(
-    (id) => {
-      setTodos(todos.filter((todo) => todo.id !== id));
-    },
-    [todos],
-  );
+  const onRemove = useCallback((id) => {
+    setTodos((todos) => todos.filter((todo) => todo.id !== id));
+  }, []);
 
   const onToggle = useCallback((id) => {
-    setTodos(
+    setTodos((todos) =>
       todos.map((todo) =>
+        // id 값이 같을 때는 정해진 규칙대로 객체를 생성하지만 다를경우 그대로 반환
         todo.id === id ? { ...todo, checked: !todo.checked } : todo,
       ),
     );
