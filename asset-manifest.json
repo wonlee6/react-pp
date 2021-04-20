@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/wonlee6/react-pp.git/static/css/main.b6c4557d.chunk.css",
+    "main.js": "/wonlee6/react-pp.git/static/js/main.de0f9184.chunk.js",
+    "main.js.map": "/wonlee6/react-pp.git/static/js/main.de0f9184.chunk.js.map",
+    "runtime-main.js": "/wonlee6/react-pp.git/static/js/runtime-main.77663831.js",
+    "runtime-main.js.map": "/wonlee6/react-pp.git/static/js/runtime-main.77663831.js.map",
+    "static/js/2.a6455d20.chunk.js": "/wonlee6/react-pp.git/static/js/2.a6455d20.chunk.js",
+    "static/js/2.a6455d20.chunk.js.map": "/wonlee6/react-pp.git/static/js/2.a6455d20.chunk.js.map",
+    "static/js/3.a389be21.chunk.js": "/wonlee6/react-pp.git/static/js/3.a389be21.chunk.js",
+    "static/js/3.a389be21.chunk.js.map": "/wonlee6/react-pp.git/static/js/3.a389be21.chunk.js.map",
+    "index.html": "/wonlee6/react-pp.git/index.html",
+    "static/css/main.b6c4557d.chunk.css.map": "/wonlee6/react-pp.git/static/css/main.b6c4557d.chunk.css.map",
+    "static/js/2.a6455d20.chunk.js.LICENSE.txt": "/wonlee6/react-pp.git/static/js/2.a6455d20.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.77663831.js",
+    "static/js/2.a6455d20.chunk.js",
+    "static/css/main.b6c4557d.chunk.css",
+    "static/js/main.de0f9184.chunk.js"
+  ]
+}
