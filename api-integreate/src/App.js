@@ -1,7 +1,8 @@
 import React from 'react';
+import Users from './Users';
 
 const App = () => {
-  return <div>hihi</div>;
+  return <Users />;
 };
 
 export default App;
